@@ -24,14 +24,20 @@
 class Solution(object):
     def isAnagram(self, s, t):
         """
-        暴力法，排序后判断是否相等
+
+        :param s:
+        :param t:
+        :return:
+        """
+        """
+        1.暴力法，排序后判断是否相等
         时间复杂度：O(nlogn)
         """
         # 异位词：字母出现的次数都是一样的
         # return sorted(s) == sorted(t)
 
         """
-        用哈希表统计第一个字符串中的字符数量；
+        2.用哈希表统计第一个字符串中的字符数量；
         再统计第二个字符串时，若字符在哈希表中，计数减一;
         当出现小于0时，返回False
         哈希精简写法
