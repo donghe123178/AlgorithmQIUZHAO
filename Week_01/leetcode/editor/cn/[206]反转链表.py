@@ -38,15 +38,25 @@ class Solution(object):
         """
         2.递归
         终止条件：当前节点或者下一个节点==None
-        """
-        def helper (head):
-            if head == None or head.next == None:
-                return head, head
-            pre, cur = helper(head.next)
-            cur.next = head
-            head.next = None  # 断开，防止循环
-            return pre, head
-        pre, cur = helper(head)
+        时间复杂度是O(N),空间复杂度是O(N),递归调用会使用隐士栈空间
+       """
+        # def helper (head):
+        #     if head == None or head.next == None:
+        #         return head, head
+        #     pre, cur = helper(head.next)
+        #     cur.next = head
+        #     head.next = None  # 断开，防止循环
+        #     return pre, head
+        # pre, cur = helper(head)
+        # return pre
+        # 递归的另一种写法
+        if head is None or head.next is None: # 注意这里的写法
+            return head
+        pre = self.reverseList(head.next)
+        head.next.next = head
+        head.next = None
         return pre
+
+
 
 # leetcode submit region end(Prohibit modification and deletion)
