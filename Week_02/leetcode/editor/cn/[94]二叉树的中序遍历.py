@@ -36,9 +36,9 @@ class Solution(object):
         时间复杂度：O(N)
         空间复杂度：O(N)
         """
-        # if not root:
-        #     return None
-        # return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
+        if not root:
+            return []
+        return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
         # 第二种写法
         # def dfs(root):
         #     if not root:
@@ -53,15 +53,15 @@ class Solution(object):
         2.迭代。递归是自动调用栈来保存每个函数的调用，迭代就是用栈来显示模拟这个过程
         时间复杂度，空间复杂度为O(n)
         """
-        res = []
-        stack = []
-        while stack or root:
-            if root:
-                stack.append(root)
-                root = root.left
-            else:
-                tmp = stack.pop()
-                res.append(tmp.val)
-                root = tmp.right
-        return res
+        # res = []
+        # stack = []
+        # while stack or root:
+        #     if root:
+        #         stack.append(root)
+        #         root = root.left
+        #     else:
+        #         tmp = stack.pop()
+        #         res.append(tmp.val)
+        #         root = tmp.right
+        # return res
 # leetcode submit region end(Prohibit modification and deletion)
