@@ -1,4 +1,5 @@
 ## 学习笔记
+[两数之和](leetcode/editor/cn/[1]两数之和.py)
 
 [TOC]
 
