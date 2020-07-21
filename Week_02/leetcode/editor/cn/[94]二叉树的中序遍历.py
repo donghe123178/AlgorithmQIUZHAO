@@ -50,7 +50,9 @@ class Solution(object):
         # dfs(root)
         # return res
         """
+        [二叉树的遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/solution/tu-jie-er-cha-shu-de-si-chong-bian-li-by-z1m/)
         2.迭代。递归是自动调用栈来保存每个函数的调用，迭代就是用栈来显示模拟这个过程
+        栈的特点：后进先出，我们可以决定在什么时候触发弹出机制
         时间复杂度，空间复杂度为O(n)
         """
         # res = []

@@ -47,7 +47,7 @@ class Solution(object):
         # dfs(root)
         # return res
 
-        # 迭代
+        # 迭代，思想就是直接把当前非叶子节点从栈顶弹出，然后将子节点进栈
         if not root:
             return []
         res = []
