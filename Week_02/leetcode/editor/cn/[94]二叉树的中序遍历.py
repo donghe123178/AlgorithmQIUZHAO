@@ -36,9 +36,11 @@ class Solution(object):
         时间复杂度：O(N)
         空间复杂度：O(N)
         """
-        if not root:
-            return []
-        return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
+        # 1.递归简洁写法
+        # if not root:
+        #     return []
+        # return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
+
         # 第二种写法
         # def dfs(root):
         #     if not root:
