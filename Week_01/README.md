@@ -20,16 +20,34 @@
 
 | 题目                                                         | 第1-2遍    | 第3遍 | 第4遍 | 第5遍 | 掌握程度 |
 | ------------------------------------------------------------ | ---------- | ----- | ----- | ----- | -------- |
-| [删除排序数组中的重复项](leetcode/editor/cn/[26]删除排序数组中的重复项.py) | 7.20日之前 |       |       |       |          |
-| [旋转数组](leetcode/editor/cn/[189]旋转数组.py)              |            |       |       |       |          |
-| [合并两个有序链表](leetcode/editor/cn/[21]合并两个有序链表.py) |            |       |       |       |          |
-| [两数之和](leetcode/editor/cn/[1]两数之和.py)                |            |       |       |       |          |
-| [移动零](leetcode/editor/cn/[283]移动零.py)                  |            |       |       |       |          |
-| [加一](leetcode/editor/cn/[66]加一.py)                       |            |       |       |       |          |
-| [有效的字母异位词](leetcode/editor/cn/[242]有效的字母异位词.py) |            |       |       |       |          |
-| [设计循环双端队列](leetcode/editor/cn/[641]设计循环双端队列.py) |            |       |       |       |          |
-| [字母异位词分组](leetcode/editor/cn/[49]字母异位词分组.py)   |            |       |       |       |          |
-| [接雨水](leetcode/editor/cn/[42]接雨水.py)                   |            |       |       |       |          |
+| **数组、链表、跳表**                                         | 7.20日之前 |       |       |       |          |
+| [70 爬楼梯](leetcode/editor/cn/[70]爬楼梯.py)                |            |       |       |       |          |
+| [11 盛最多水的容器](leetcode/editor/cn/[11]盛最多水的容器.py) |            |       |       |       |          |
+| [15 三数之和](leetcode/editor/cn/[15]三数之和.py)            |            |       |       |       |          |
+| [66 加一](leetcode/editor/cn/[66]加一.py)                    |            |       |       |       |          |
+| [283 移动零](leetcode/editor/cn/[283]移动零.py)              |            |       |       |       |          |
+| [189 旋转数组](leetcode/editor/cn/[189]旋转数组.py)          |            |       |       |       |          |
+| [26 删除排序数组中的重复项](leetcode/editor/cn/[26]删除排序数组中的重复项.py) |            |       |       |       |          |
+| [88 合并两个有序数组](leetcode/editor/cn/[88]合并两个有序数组.py) |            |       |       |       |          |
+| [21合并两个有序链表](leetcode/editor/cn/[21]合并两个有序链表.py) |            |       |       |       |          |
+| [206 反转链表](leetcode/editor/cn/[206]反转链表.py)          |            |       |       |       |          |
+| [24 两两交换链表中的节点](leetcode/editor/cn/[24]两两交换链表中的节点.py) |            |       |       |       |          |
+| [141 环形链表](leetcode/editor/cn/[141]环形链表.py)          |            |       |       |       |          |
+| [142 环形链表II](leetcode/editor/cn/[142]环形链表 II.py)     |            |       |       |       |          |
+| [25 k个一组翻转链表]([25]K 个一组翻转链表.py)                |            |       |       |       |          |
+| **栈、队列、优先队列、双端队列**                             |            |       |       |       |          |
+| [20 有效的括号](leetcode/editor/cn/[20]有效的括号.py)        |            |       |       |       |          |
+| [155 最小栈](leetcode/editor/cn/[155]最小栈.py)              |            |       |       |       |          |
+| [84 柱状图中最大的矩形](leetcode/editor/cn/[84]柱状图中最大的矩形.py) |            |       |       |       |          |
+| [239 滑动窗口最大值](leetcode/editor/cn/[239]滑动窗口最大值.py) |            |       |       |       |          |
+| [641 设计循环双端队列](leetcode/editor/cn/[641]设计循环双端队列.py) |            |       |       |       |          |
+| [42 接雨水](leetcode/editor/cn/[42]接雨水.py)                |            |       |       |       |          |
+| **哈希表、映射、集合**                                       |            |       |       |       |          |
+| [1 两数之和](leetcode/editor/cn/[1]两数之和.py)              |            |       |       |       |          |
+| [242 有效的字母异位词](leetcode/editor/cn/[242]有效的字母异位词.py) |            |       |       |       |          |
+| [49 字母异位词分组](leetcode/editor/cn/[49]字母异位词分组.py) |            |       |       |       |          |
+
+
 
 #### 3.Python（有时间再补充）
 
