@@ -31,13 +31,13 @@ class Solution(object):
         三元组不重复，判重？
         1.暴力法，三重循环O(N^3)
         2.由于题目没要求返回下标，因此可将列表排序，O(NlogN)
-        3.双指针法，时间复杂度O(N^2)，空间复杂度O(1)
+        3.双指针法，夹逼，时间复杂度O(N^2)，空间复杂度O(1)
         """
         nums.sort()
         res = []  # 存放结果
         k = 0  # 固定最小值
         for k in range(len(nums) - 2):
-            if nums[k] > 0: break
+            if nums[k] > 0: break  # 排序之后，k代表的值是最小的 
             if k > 0 and nums[k] == nums[k - 1]: continue  # 跳过重复的nums[k]
             i, j = k + 1, len(nums) - 1
             while i < j:
