@@ -1,5 +1,7 @@
 ## 学习笔记
 
+[TOC]
+
 #### 递归、分治、回溯
 
 **思维要点**：
@@ -51,7 +53,9 @@ def divide_conquer(problem, param1, param2,...):
 
 #### **回溯**
 
-回溯法是一个剪了枝的二叉树
+回溯算法就是个多叉树的遍历问题，关键就是在前序遍历和后序遍历的位置做一些操作，复杂度非常高
+
+回溯算法关键在于不合适就退回上一步，然后通过约束条件，减少时间复杂度
 
 ##### 判断回溯
 
@@ -64,6 +68,38 @@ def divide_conquer(problem, param1, param2,...):
 - 求最优解
 
 不断地去每一层去试就好了，常用两个变量，**res保存最终结果，path保存已经走过的路径**
+
+*==回溯算法模板==*
+
+```python
+result = []
+def backtrack(选择列表，level, 路径):
+    if 满足结束条件:
+        result.add(路径) # 经常需要浅拷贝一下
+        return
+    for 选择 in 选择列表:
+        做选择
+        backtrack(选择列表，level + 1, 路径)
+        撤销选择
+```
+
+78.子集
+
+```python
+res = []
+def backtrack(nums, i, subset):
+    res.append(subset[:])  # 浅拷贝一下
+    for j in range(i, len(nums)):
+        subset.append(nums[j])
+        backtrack(nums, j + 1, subset)
+        subset.pop()
+
+backtrack(nums, 0, [])
+return res
+
+```
+
+
 
 ```python
     def generateParenthesis(self, n):

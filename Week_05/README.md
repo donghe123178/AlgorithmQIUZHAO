@@ -41,8 +41,6 @@ class Solution(object):
         return 0
 ```
 
-
-
 #### 启发式搜索 A*Search
 
 是基于BFS的
