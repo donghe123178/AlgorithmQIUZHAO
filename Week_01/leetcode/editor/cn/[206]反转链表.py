@@ -56,6 +56,18 @@ class Solution(object):
         head.next.next = head
         head.next = None
         return pre
+        
+        # 栈，重新构造链表
+        stack = []
+        while head is not None:
+            stack.append(head.val)
+            head = head.next
+        cur = ListNode(stack.pop())  # 新链表头
+        tmp = cur
+        while stack:
+            tmp.next = ListNode(stack.pop())
+            tmp = tmp.next
+        return cur
 
 
 
